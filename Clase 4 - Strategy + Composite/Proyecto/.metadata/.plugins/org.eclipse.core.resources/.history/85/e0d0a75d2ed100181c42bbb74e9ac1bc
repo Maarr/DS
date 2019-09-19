@@ -1,0 +1,22 @@
+package formulario;
+import java.util.*;
+
+import datos.Dato;
+
+public class Formulario {
+	
+	private List<Dato> datos = new ArrayList<Dato>();
+	
+	public void addDato(Dato dato) {
+		datos.add(dato);
+	}
+
+	public void pideDatos() {
+		for (Dato dato : datos) {
+			dato.pideDato();
+			System.out.println(dato.getDato());
+		}
+	}
+
+	
+}

@@ -1,0 +1,16 @@
+package datos;
+
+import formulario.Campo;
+
+public class Sueldo extends DatoFormulario {
+	
+	public Sueldo() {
+		super(new Campo("Sueldo"));
+	}
+
+	@Override
+	public boolean validar() {
+		return (super.getValidador().validarSoloDigitos(super.getDato()) && super.getValidador().validarMayorQue(super.getDato(), 800) && super.getValidador().validarMenorQue(super.getDato(), 1200));
+	}
+
+}

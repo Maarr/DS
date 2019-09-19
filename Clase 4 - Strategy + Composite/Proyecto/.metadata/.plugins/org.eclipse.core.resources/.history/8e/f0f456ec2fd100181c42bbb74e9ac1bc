@@ -1,0 +1,16 @@
+package datos;
+
+import campos.Campo;
+
+public class Ubicacion extends DatoFormulario{
+	
+	public Ubicacion() {
+		super(new Campo("Ubicación"));
+	}
+
+	@Override
+	public boolean validar() {
+		return super.getValidador().validarCumpleValores(super.getDato(), valores)
+	}
+
+}

@@ -1,0 +1,9 @@
+package paq;
+
+public class Instruccion {
+	
+	public void ejecutar(Main maquina) {
+		System.out.println("");
+	}
+
+}

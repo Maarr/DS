@@ -1,0 +1,19 @@
+package datos;
+
+import formulario.Campo;
+
+public class Ubicacion extends DatoFormulario{
+	
+	public Ubicacion() {
+		super(new Campo("Ubicación"));
+	}
+
+	@Override
+	public boolean validar() {
+		String[] valores= {"Santander", "Oviedo", "Cádiz"};
+		return ((super.getValidador().getLongitud().validarLongitud(super.getDato(), 5) &&
+				super.getValidador().getValidadorDigitos().validarSoloDigitos(super.getDato())) ||
+				(super.getValidador().getCumplirValores().validarCumpleValores(super.getDato(), valores)));
+	}
+
+}

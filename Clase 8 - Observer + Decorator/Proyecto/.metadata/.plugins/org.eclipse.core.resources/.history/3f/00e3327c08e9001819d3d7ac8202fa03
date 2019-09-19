@@ -1,0 +1,13 @@
+package encuesta;
+
+import java.util.List;
+
+public class GestorGraficos {
+	
+	private List<ElementoGrafico> graficos;
+	
+	public GestorGraficos(List<ElementoGrafico> graficos) {
+		this.graficos=graficos;
+	}
+
+}

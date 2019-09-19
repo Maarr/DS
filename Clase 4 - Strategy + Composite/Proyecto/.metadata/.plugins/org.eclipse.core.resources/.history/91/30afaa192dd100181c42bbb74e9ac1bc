@@ -1,0 +1,17 @@
+package datos;
+
+import campos.CampoTexto;
+
+public class CodigoProducto extends Dato{
+	
+	public CodigoProducto() {
+		super(new CampoTexto("Código de Producto"));
+	}
+
+	@Override
+	public boolean validar() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

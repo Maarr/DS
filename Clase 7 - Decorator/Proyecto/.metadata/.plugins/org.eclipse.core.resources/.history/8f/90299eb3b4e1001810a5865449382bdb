@@ -1,0 +1,7 @@
+package modificadores;
+
+public interface Modificar {
+	
+	public void execute();
+
+}

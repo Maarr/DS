@@ -1,0 +1,17 @@
+package game;
+
+import adapters.Platform;
+
+public abstract class Game {
+	
+	private Platform platform;
+	
+	public Game(Platform p) {
+		this.platform=p;
+	}
+	
+	public void play() {
+		
+	}
+
+}

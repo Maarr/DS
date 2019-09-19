@@ -1,0 +1,13 @@
+package editores;
+
+import model.Restaurante;
+
+public class EditorRestaurante extends Editor {
+	
+	private Restaurante restaurante;
+	
+	public EditorRestaurante(Restaurante restaurante) {
+		this.restaurante=restaurante;
+	}
+
+}

@@ -1,0 +1,7 @@
+package condiciones;
+
+public interface Condicion {
+	
+	public boolean comprobar();
+
+}

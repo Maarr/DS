@@ -1,0 +1,29 @@
+package datos;
+
+import campos.Campo;
+
+public abstract class Dato {
+	
+	private Campo campo;
+	private Validador validador=new Validador();
+	
+	public Dato(Campo campo) {
+		this.campo=campo;
+	}
+	
+	public void pideDato() {
+		do {
+			campo.pideDato();
+		}while(!validar());
+		
+	}
+	
+	public String getDato() {
+		return campo.getDato();
+	}
+	
+	public abstract boolean validar();
+	
+	
+
+}

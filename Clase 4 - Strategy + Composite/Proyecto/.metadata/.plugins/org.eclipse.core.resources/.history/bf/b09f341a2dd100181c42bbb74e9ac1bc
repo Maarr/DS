@@ -1,0 +1,17 @@
+package datos;
+
+import campos.CampoTexto;
+
+public class Ubicacion extends Dato{
+	
+	public Ubicacion() {
+		super(new CampoTexto("Ubicación"));
+	}
+
+	@Override
+	public boolean validar() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

@@ -1,0 +1,12 @@
+package editor;
+
+import java.util.Stack;
+
+public abstract class Historial {
+	
+	private Stack<Cambio> cambios;
+	
+	protected abstract undo();
+	protected abstract redo();
+
+}

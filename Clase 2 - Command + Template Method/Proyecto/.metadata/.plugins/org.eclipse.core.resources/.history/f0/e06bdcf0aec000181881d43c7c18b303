@@ -1,0 +1,15 @@
+package paq;
+
+import java.util.Scanner;
+
+public class InstInput extends Instruccion {
+	
+	private static Scanner console = new Scanner(System.in);
+	
+	public void ejecutar() {
+		System.out.println("Escriba un entero:");
+		pila.push(console.nextInt());
+		ip++;
+	}
+
+}

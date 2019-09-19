@@ -1,0 +1,9 @@
+package encuesta;
+
+public class Actualizador {
+	
+	public void actualizar() {
+		
+	}
+
+}

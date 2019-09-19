@@ -1,0 +1,32 @@
+package game;
+
+import java.awt.Point;
+
+import adapters.Platform;
+import platform.Image2D;
+
+public abstract class Game {
+	
+	Platform platform;
+	Image2D image;
+	
+	public Game(Platform p) {
+		this.platform=p;
+	}
+	
+	public void launch(String file) {
+		image=platform.loadImage(file);
+		play();
+	}
+	
+	public Point getPosition() {
+		return platform.getPosition();
+	}
+	
+	public void draw() {
+		return platform.drawBall(image,getPosition());
+	}
+	
+	abstract void play();
+
+}

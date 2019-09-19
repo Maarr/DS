@@ -1,0 +1,75 @@
+package visitor;
+
+import java.io.Console;
+
+import nodos.Asignacion;
+import nodos.ConstanteInt;
+import nodos.Division;
+import nodos.Print;
+import nodos.Producto;
+import nodos.Programa;
+import nodos.Read;
+import nodos.Sentencia;
+import nodos.Suma;
+import nodos.Variable;
+
+public class InterpreteVisitor implements Visitor{
+
+	@Override
+	public Object visit(Programa program, Object param) {
+		for (Sentencia sent : program.sentencias)
+			sent.accept(this, null);
+			return null;
+	}
+
+	@Override
+	public Object visit(Print print, Object param) {
+		System.out.print("print ");
+		print.expr.accept(this, null);
+		System.out.println(";");
+		return null;
+	}
+
+	@Override
+	public Object visit(Read read, Object param) {
+		Object x=System.console().readLine();
+		read.var.accept(this, x);
+		return null;
+	}
+
+	@Override
+	public Object visit(Suma suma, Object param) {
+		return (double)(suma.left.accept(this, null))+(double)(suma.right.accept(this, null));
+	}
+
+	@Override
+	public Object visit(Producto product, Object param) {
+		return (double)(product.left.accept(this, null))*(double)(product.right.accept(this, null));
+	}
+
+	@Override
+	public Object visit(Division div, Object param) {
+		return (double)(div.left.accept(this, null))/(double)(div.right.accept(this, null));
+	}
+
+	@Override
+	public Object visit(Asignacion asig, Object param) {
+		asig.variable.accept(this, null);
+		System.out.print(" = ");
+		asig.expr.accept(this, null);
+		System.out.println(";");
+		return null;
+	}
+
+	@Override
+	public Object visit(Variable var, Object param) {
+		return var.getValor();
+	}
+
+	@Override
+	public Object visit(ConstanteInt constInt, Object param) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

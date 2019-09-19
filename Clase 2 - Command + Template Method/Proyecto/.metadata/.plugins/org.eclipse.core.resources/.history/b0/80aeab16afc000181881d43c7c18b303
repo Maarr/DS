@@ -1,0 +1,10 @@
+package paq;
+
+public class InstAdd extends Instruccion {
+	
+	public void ejecutar() {
+		pila.push(pila.pop() + pila.pop());
+		ip++;
+	}
+
+}

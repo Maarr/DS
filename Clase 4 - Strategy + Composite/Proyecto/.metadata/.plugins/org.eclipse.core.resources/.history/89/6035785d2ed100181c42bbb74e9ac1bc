@@ -1,0 +1,17 @@
+package datos;
+
+import campos.Campo;
+
+public class CodigoPromocion extends Dato {
+	
+	public CodigoPromocion() {
+		super(new Campo("Código de Promoción"));
+	}
+
+	@Override
+	public boolean validar() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

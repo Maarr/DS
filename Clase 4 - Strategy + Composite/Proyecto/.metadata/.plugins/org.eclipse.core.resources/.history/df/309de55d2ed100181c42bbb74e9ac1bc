@@ -1,0 +1,17 @@
+package datos;
+
+import campos.Campo;
+
+public class Telefono extends Dato{
+	
+	public Telefono() {
+		super(new Campo("Telefono"));
+	}
+
+	@Override
+	public boolean validar() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

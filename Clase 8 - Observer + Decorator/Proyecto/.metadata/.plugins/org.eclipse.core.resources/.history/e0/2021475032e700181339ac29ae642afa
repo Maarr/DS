@@ -1,0 +1,13 @@
+package encuesta;
+
+public class Grafico {
+	
+	private Encuesta encuesta;
+	
+	public void actualizar() {
+		
+	}
+	
+	
+
+}

@@ -1,0 +1,13 @@
+package encuesta;
+
+public class Encuesta {
+	
+	private Pregunta pregunta;
+	private int si;
+	private int no;
+	
+	public Encuesta(Pregunta pregunta) {
+		this.pregunta=pregunta;
+	}
+
+}

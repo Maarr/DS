@@ -1,0 +1,15 @@
+package paq;
+
+public class Pila {
+	
+	private static void push(int valor) {
+		pila[sp] = valor;
+		sp++;
+	}
+
+	private static int pop() {
+		sp--;
+		return pila[sp];
+	}
+
+}

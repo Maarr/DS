@@ -1,0 +1,10 @@
+package modificadores;
+
+public class NormalizacionSaltosLineaOutput implements Output{
+
+	public void execute(String text) {
+		text.replace('\r', );
+
+	}	
+
+}

@@ -1,0 +1,19 @@
+package formulario;
+
+import java.io.*;
+
+import model.Monumento;
+
+/* Formulario básico para usar cuando se quieran pedir solo dos valores sobre algo */
+public class MiniFormulario {
+
+	public void editar(Editor editor) {
+
+		
+	}
+
+	private void imprimeMonumento(Monumento monumento) {
+		
+	}
+
+}

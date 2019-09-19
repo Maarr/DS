@@ -1,0 +1,16 @@
+package modificadores;
+
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class Encriptar{
+
+	public void execute(String text) {
+		for(char c:text.toCharArray())
+			text.replace(c,(char)(Character.valueOf(c)+1));
+		
+			
+	}
+
+}

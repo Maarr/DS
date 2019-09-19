@@ -1,0 +1,22 @@
+package editor;
+
+import java.util.Stack;
+
+import cambios.Cambio;
+
+public class Historial {
+	
+	private Stack<Cambio> cambios;
+	
+	public Historial() {
+		cambios=new Stack<Cambio>();
+	}
+	
+	public void undo() {
+		cambios.pop().undo();
+	}
+	public  void redo() {
+		cambios.pop().redo();
+	}
+
+}

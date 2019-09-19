@@ -1,0 +1,9 @@
+package paq;
+
+public class InstMul extends Instruccion{
+	
+	public void ejecutar() {
+		System.out.println("");
+	}
+
+}

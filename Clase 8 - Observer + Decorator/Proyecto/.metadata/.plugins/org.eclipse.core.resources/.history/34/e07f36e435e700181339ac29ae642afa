@@ -1,0 +1,19 @@
+package main;
+import java.io.*;
+import java.util.ArrayList;
+import java.util.List;
+
+import encuesta.*;
+
+public class Main {
+
+	public static void main(String[] args) throws IOException {
+		List<ElementoGrafico> elementos=new ArrayList<ElementoGrafico>();
+		Encuesta encuesta = new Encuesta(new Pregunta("¿Está a favor de la energia nuclear?"),elementos);
+
+		TextUserInterface userInterface = new TextUserInterface();
+		userInterface.rellena(encuesta);
+	}
+
+}
+

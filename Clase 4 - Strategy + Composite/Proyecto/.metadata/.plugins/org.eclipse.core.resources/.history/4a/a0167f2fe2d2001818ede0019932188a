@@ -1,0 +1,17 @@
+package datos;
+
+import formulario.Campo;
+
+public class CodigoPromocion extends DatoFormulario {
+	
+	public CodigoPromocion() {
+		super(new Campo("Código de Promoción"));
+	}
+
+	@Override
+	public boolean validar() {
+		return (super.getValidador().validarSoloLetras(super.getDato()) || 
+				(super.getValidador().validarSoloDigitos(super.getDato()) && super.getValidador().validarLongitud(super.getDato(), 3)));
+	}
+
+}

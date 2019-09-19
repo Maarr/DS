@@ -1,0 +1,8 @@
+package editores;
+
+public interface Editor {
+	
+	void editar();
+	void imprimir();
+
+}

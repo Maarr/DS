@@ -1,0 +1,41 @@
+package modificaciones;
+
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+
+import fileSystem.FileSystem;
+import fileSystem.Output;
+
+public class Encriptar {
+	
+	private String name;
+	private Output output;
+	
+	public Encriptar(String name,Output output) {
+		this.output=output;
+		this.name=name;
+	}
+
+	public void encriptar() {
+		try {
+			FileWriter writer=new FileWriter(name);
+			FileReader reader=new FileReader(name);
+			int c;
+			while ((c = reader.read()) != -1) 
+				if(Character.isDigit(c) || Character.isLetter(c))
+					writer.write(c+1);
+
+			reader.close();
+			writer.close();
+
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public void copy() {
+		new FileSystem().copy(name, output);
+	}
+
+}

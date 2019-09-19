@@ -1,0 +1,28 @@
+package modificadores;
+
+import java.io.IOException;
+import java.util.List;
+
+import fileSystem.Output;
+
+public class EncriptacionOutput implements Output{
+	
+	private Output[] outputs;
+
+	public EncriptacionOutput(Output ...outputs) {
+		this.outputs=outputs;
+	}
+
+	@Override
+	public void send(char c) throws IOException {
+		output.send((char) (c+1));
+		
+	}
+
+	@Override
+	public void close() throws IOException {
+		output.close();
+		
+	}
+
+}

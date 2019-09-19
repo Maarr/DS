@@ -1,0 +1,61 @@
+package game;
+
+import java.awt.Point;
+
+import adapters.Android;
+import adapters.Platform;
+import platform.*;
+import platform.android.*;
+import platform.playstation.*;
+import platform.windows.*;
+
+/* Esta clase/paquete sería el código del videojuego, el cual se quiere reutilizar
+ * en las distintas plataformas 
+ */
+
+public class BallGame {
+	// Seleccionar para qué plataforma se quiere generar el juego
+	private Platform platform = new Android();
+	// private Platform platform = Platform.WINDOWS;
+	// private Platform platform = Platform.PLAYSTATION;
+
+//	private void setAPI() {
+//		if (platform == Platform.ANDROID)
+//			android = new AndroidAPI();
+//		else if (platform == Platform.WINDOWS)
+//			windows = new WindowsAPI();
+//		else
+//			playstation = new Playstation5API();
+//	}
+
+	public void play() {
+		//setAPI();
+
+		Image2D image = loadImage("Bola.jpg");
+
+		// Lógica principal del juego
+		for (int i = 0; i < 10; i++) {
+			Point point = getPosition();
+			// Comprobar colisiones...
+			// Imprimir marcador...
+			// Otra lógica del juego...
+			drawBall(image, point);
+		}
+	}
+
+	private Image2D loadImage(String file) {
+		Image2D image;
+		image = platform.loadImage(file);
+		return image;
+	}
+
+	private void drawBall(Image2D image, Point point) {
+			platform.drawBall(image,point);
+	}
+
+	private Point getPosition() {
+		Point point;
+		point = platform.getPosition();
+		return point;
+	}
+}

@@ -1,0 +1,15 @@
+package encuesta;
+
+public abstract class ElementoGrafico {
+	
+	private Condicion cond;
+	
+	public void establecerCondicion(Condicion cond) {
+		this.cond=cond;
+	}
+	
+	public void actualizar();
+	
+	
+
+}

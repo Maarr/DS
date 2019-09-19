@@ -1,0 +1,17 @@
+package editores;
+
+public class EditorMonumento implements Editor {
+
+	@Override
+	public void editar() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void imprimir() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

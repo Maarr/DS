@@ -1,0 +1,19 @@
+package paq;
+
+public class InstJmpg extends Instruccion{
+	
+private int valor;
+	
+	public InstJmpg(int valor) {
+		 this.valor=valor;
+	 }
+	public void ejecutar() {
+		int b = pila.pop();
+		int a = pila.pop();
+		if (a > b)
+			ip = Integer.parseInt(instruccion[1]);
+		else
+			ip++;
+	}
+
+}

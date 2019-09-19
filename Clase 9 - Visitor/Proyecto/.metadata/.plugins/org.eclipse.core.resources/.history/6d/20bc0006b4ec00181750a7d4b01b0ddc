@@ -1,0 +1,70 @@
+package visitor;
+
+import nodos.Asignacion;
+import nodos.ConstanteInt;
+import nodos.Division;
+import nodos.Print;
+import nodos.Producto;
+import nodos.Programa;
+import nodos.Read;
+import nodos.Suma;
+import nodos.Variable;
+
+public class PrintVisitor implements Visitor{
+
+	@Override
+	public Object visit(Programa program, Object param) {
+		
+	}
+
+	@Override
+	public Object visit(Print print, Object param) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Object visit(Read read, Object param) {
+		System.out.print("read ");
+		read.var.accept(this, null);
+		System.out.println(";");
+		return null;
+	}
+
+	@Override
+	public Object visit(Suma suma, Object param) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Object visit(Producto product, Object param) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Object visit(Division div, Object param) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Object visit(Asignacion asig, Object param) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Object visit(Variable var, Object param) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Object visit(ConstanteInt constInt, Object param) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+		// Hacerla
+}

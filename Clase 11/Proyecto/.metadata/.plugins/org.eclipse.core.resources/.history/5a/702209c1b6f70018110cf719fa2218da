@@ -1,0 +1,9 @@
+package CH.ifa.draw.samples.nada;
+
+public class RomboFigure {
+
+	public RomboFigure() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

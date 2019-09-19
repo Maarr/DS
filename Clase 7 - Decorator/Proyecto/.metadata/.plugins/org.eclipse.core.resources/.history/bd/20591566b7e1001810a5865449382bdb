@@ -1,0 +1,15 @@
+package modificadores;
+
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+
+
+public class QuitarEspacios implements Modificador {
+
+	public void execute(char c) {
+		if(Character.isDigit(c) || Character.isLetter(c))
+
+	}
+
+}

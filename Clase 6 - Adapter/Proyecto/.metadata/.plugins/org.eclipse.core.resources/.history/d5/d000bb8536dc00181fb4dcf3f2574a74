@@ -1,0 +1,23 @@
+package editores;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public abstract class Editor {
+	
+	BufferedReader consola = new BufferedReader(new InputStreamReader(System.in));
+	
+	private String getLínea() {
+		do {
+			try {
+				return consola.readLine();
+			} catch (IOException ex) {
+				System.out.println("Error de lectura. Inténtelo de nuevo.");
+			}
+		} while (true);
+	}
+
+
+
+}

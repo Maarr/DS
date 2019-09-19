@@ -1,0 +1,16 @@
+package datos;
+
+import formulario.Campo;
+
+public class CodigoPostal extends DatoFormulario {
+	
+	public CodigoPostal() {
+		super(new Campo("Código Postal"));
+	}
+
+	@Override
+	public boolean validar() {
+		return (super.getValidador().validarLongitud(super.getDato(), 5) && super.getValidador().validarSoloDigitos(super.getDato()));
+	}
+
+}

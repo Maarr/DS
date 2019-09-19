@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="nodos.Programa"/>
+<fullyQualifiedTypeName name="nodos.Print"/>
+<fullyQualifiedTypeName name="nodos.Suma"/>
+<fullyQualifiedTypeName name="nodos.Read"/>
+<fullyQualifiedTypeName name="nodos.Producto"/>
+<fullyQualifiedTypeName name="nodos.Division"/>
+<fullyQualifiedTypeName name="nodos.Asignacion"/>
+<fullyQualifiedTypeName name="nodos.Variable"/>
+<fullyQualifiedTypeName name="nodos.ConstanteInt"/>
+<fullyQualifiedTypeName name="visitor.Visitor"/>
+<fullyQualifiedTypeName name="nodos.Sentencia"/>
+<fullyQualifiedTypeName name="visitor.InterpreteVisitor"/>
+<fullyQualifiedTypeName name="java.io.Console"/>
+<fullyQualifiedTypeName name="java.io.InputStreamReader"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="java.io.BufferedReader"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+</qualifiedTypeNameHistroy>

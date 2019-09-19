@@ -1,0 +1,17 @@
+package datos;
+
+import campos.Campo;
+
+public class Sueldo extends DatoFormulario {
+	
+	public Sueldo() {
+		super(new Campo("Sueldo"));
+	}
+
+	@Override
+	public boolean validar() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

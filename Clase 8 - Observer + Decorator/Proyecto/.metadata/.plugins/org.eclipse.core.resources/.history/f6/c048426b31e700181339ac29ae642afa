@@ -1,0 +1,9 @@
+package elementos;
+
+public class LineaEstado {
+	
+	public void actualizar(int si, int no) {
+		System.out.println("nº votos SI= "+si+" nº votos NO= "+no);
+	}
+
+}

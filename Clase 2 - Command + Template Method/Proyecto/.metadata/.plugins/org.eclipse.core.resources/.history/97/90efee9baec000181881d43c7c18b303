@@ -1,0 +1,39 @@
+package paq;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class MaquinaVirtual {
+	
+	private static List<Instruccion> instrucciones;
+	private static int ip = 0;
+	private static Memoria memoria=new Memoria();
+	private static Pila pila = new Pila();
+	
+	public MaquinaVirtual(List<Instruccion> instrucciones) {
+		this.instrucciones=instrucciones;
+	}
+	
+	public void ejecutarPrograma() {
+		while (ip < instrucciones.size()) 
+			instrucciones.get(ip).ejecutar(this);
+		
+	}
+	
+	public Memoria getMemoria() {
+		return memoria;
+	}
+	
+	public Pila getPila() {
+		return pila;
+	}
+	
+	public int getIp() {
+		return ip;
+	}
+	
+	public void setIp(int ip) {
+		this.ip=ip;
+	}
+
+}

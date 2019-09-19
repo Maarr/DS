@@ -1,0 +1,28 @@
+package campos;
+import java.io.*;
+
+public class Campo {
+
+	private String etiqueta;
+
+	public Campo(String etiqueta) {
+		this.etiqueta = etiqueta;
+	}
+
+	public String pideDato() {
+		BufferedReader consola = new BufferedReader(new InputStreamReader(System.in));
+
+		boolean valido;
+		
+		String valor;
+		try {
+			System.out.print(etiqueta + ": ");
+			valor = consola.readLine();
+
+		} catch (IOException ex) {
+			System.out.println(ex);
+		}
+		return valor;
+	}
+
+}

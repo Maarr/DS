@@ -1,0 +1,31 @@
+package cambios;
+
+import editor.Dibujo;
+import editor.Figura;
+
+public class CambioMover implements Cambio{
+	
+	private Figura figuraAntes;
+	private Figura figuraDespues;
+	private Dibujo dibujo;
+	
+	public CambioMover(Figura antes,Figura despues, Dibujo dibujo) {
+		this.figuraAntes=antes;
+		this.figuraDespues=despues;
+		this.dibujo=dibujo;
+	}
+
+	@Override
+	public void undo() {
+		if(!dibujo.Contiene(figuraAntes))
+			dibujo.SustituirFigura(figuraDespues, figuraAntes);
+	}
+
+	@Override
+	public void redo() {
+		if(!dibujo.Contiene(figuraDespues))
+			dibujo.SustituirFigura(figuraAntes, figuraDespues);
+		
+	}
+
+}

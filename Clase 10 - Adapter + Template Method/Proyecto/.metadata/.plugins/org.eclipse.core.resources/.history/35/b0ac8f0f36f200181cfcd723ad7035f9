@@ -1,0 +1,23 @@
+package game;
+
+import adapters.Platform;
+import platform.Image2D;
+
+public abstract class Game {
+	
+	private Platform platform;
+	private Image2D image;
+	
+	public Game(Platform p) {
+		this.platform=p;
+	}
+	
+	public void launch() {
+		
+		
+		
+	}
+	
+	abstract void play();
+
+}

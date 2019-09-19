@@ -1,0 +1,11 @@
+package datos;
+
+public class Nombre extends Dato{
+
+	@Override
+	public boolean validar() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

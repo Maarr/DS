@@ -1,0 +1,26 @@
+package modificadores;
+
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class NormalizarSaltosLinea implements Modificador {
+
+	public void execute(char c) {
+		try {
+			FileWriter writer=new FileWriter(name);
+			FileReader reader=new FileReader(name);
+			int c;
+			while ((c = reader.read()) != -1) 
+				if(c!='\r')
+					writer.write(c);
+
+			reader.close();
+			writer.close();
+
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}	
+
+}

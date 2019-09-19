@@ -1,0 +1,19 @@
+package parte1;
+
+public class Temperatura {
+	
+	private double valor;
+	
+	public Temperatura(double valor) {
+		this.valor=valor;
+	}
+	
+	public double valorCelsius() {
+		return valor;
+	}
+	
+	public double valorFahrenheit() {
+		return valor* 1.8 + 32;
+	}
+
+}

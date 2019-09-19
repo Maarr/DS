@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.util.Stack"/>
+<fullyQualifiedTypeName name="editor.Figura"/>
+<fullyQualifiedTypeName name="cambios.Cambio"/>
+<fullyQualifiedTypeName name="editor.Dibujo"/>
+<fullyQualifiedTypeName name="cambios.CambioCrear"/>
+<fullyQualifiedTypeName name="cambios.CambioMover"/>
+<fullyQualifiedTypeName name="java.awt.Point"/>
+</qualifiedTypeNameHistroy>

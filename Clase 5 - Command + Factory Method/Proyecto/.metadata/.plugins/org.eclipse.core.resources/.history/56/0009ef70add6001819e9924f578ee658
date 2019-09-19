@@ -1,0 +1,18 @@
+package cambios;
+
+public class CambioCrear implements Cambio {
+	
+	private Figura figura;
+
+	@Override
+	public void undo() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void redo() {
+		
+	}
+
+}

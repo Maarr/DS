@@ -1,0 +1,34 @@
+package fileSystem;
+
+import java.io.*;
+import java.util.ArrayList;
+import java.util.List;
+
+import modificadores.Modificador;
+
+public class FileSystem {
+
+	public void copy(String name,Output output,Modificador ... mod) {
+		List<Modificador> mods=new ArrayList<Modificador>();
+		mods.add(mod);
+		for(Modificador m:mods) {
+			m.execute(name);
+		}
+		try {
+			FileReader reader = new FileReader(name);
+
+			int c;
+			while ((c = reader.read()) != -1)
+				output.send((char) c);
+
+			reader.close();
+			output.close();
+
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	
+
+}

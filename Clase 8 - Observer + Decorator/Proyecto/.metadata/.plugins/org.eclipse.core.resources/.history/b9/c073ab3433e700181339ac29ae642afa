@@ -1,0 +1,10 @@
+package encuesta;
+
+public interface Actualizar {
+	
+	
+	public void actualizar();
+	
+	
+
+}

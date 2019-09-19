@@ -1,0 +1,34 @@
+package modificaciones;
+
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+
+import fileSystem.FileSystem;
+
+public class NormalizarSaltosLinea {
+	
+	private FileSystem fs;
+	
+	public NormalizarSaltosLinea(FileSystem fs) {
+		this.fs=fs;
+	}
+	
+	public void normalizarSaltos() {
+		try {
+			FileWriter writer=new FileWriter(fs.getName());
+			FileReader reader=new FileReader(fs.getName());
+			int c;
+			while ((c = reader.read()) != -1) 
+				if(c!='\r')
+					writer.write(c);
+
+			reader.close();
+			writer.close();
+
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+
+}

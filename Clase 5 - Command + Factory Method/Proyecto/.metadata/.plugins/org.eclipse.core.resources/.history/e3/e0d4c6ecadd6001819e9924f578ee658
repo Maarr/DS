@@ -1,0 +1,24 @@
+package cambios;
+
+import editor.Figura;
+
+public class CambioCrear implements Cambio {
+	
+	private Figura figura;
+	
+	public CambioCrear(Figura figura) {
+		this.figura=figura;
+	}
+
+	@Override
+	public void undo() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void redo() {
+		
+	}
+
+}

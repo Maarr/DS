@@ -1,0 +1,34 @@
+package modificadores;
+
+import java.io.IOException;
+
+import fileSystem.Output;
+
+public class EncriptacionOutput implements Output{
+	
+	private Output output;
+
+	public EncriptacionOutput(Output output) {
+		this.output=output;
+	}
+
+	public void execute(String text) {
+		for(char c:text.toCharArray())
+			text.replace(c,(char)(Character.valueOf(c)+1));
+		
+			
+	}
+
+	@Override
+	public void send(char c) throws IOException {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void close() throws IOException {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

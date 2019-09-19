@@ -1,0 +1,9 @@
+package paq;
+
+public class Instruccion {
+	
+	public void ejecutar(Memoria memoria, Pila pila) {
+		System.out.println("");
+	}
+
+}

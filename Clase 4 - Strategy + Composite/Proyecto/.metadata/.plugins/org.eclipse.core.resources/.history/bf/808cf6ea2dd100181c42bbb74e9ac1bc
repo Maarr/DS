@@ -1,0 +1,25 @@
+package datos;
+
+import campos.Campo;
+
+public abstract class Dato {
+	
+	private Campo campo;
+	
+	public Dato(Campo campo) {
+		this.campo=campo;
+	}
+	
+	public void pideDato() {
+		campo.pideDato();
+	}
+	
+	public String getDato() {
+		return valor;
+	}
+	
+	public abstract boolean validar();
+	
+	
+
+}

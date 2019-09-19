@@ -1,0 +1,19 @@
+package datos;
+
+import campos.Campo;
+import campos.CampoTexto;
+
+public class Apellido extends Dato {
+
+	public Apellido() {
+		super(new CampoTexto("Apellido"));
+		
+	}
+
+	@Override
+	public boolean validar() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

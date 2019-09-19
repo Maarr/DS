@@ -1,0 +1,9 @@
+1537265302708	Move compilation units
+1537265798303	Extract method 'getPrice'
+1537265835644	Extract method 'getPoints'
+1537266024322	Move method 'getPoints'
+1537266035022	Move method 'getPrice'
+1537266224352	Move method 'getPrice'
+1537266240248	Move method 'getPoints'
+1537267863170	Rename type 'Children'
+1537376149887	Delete element

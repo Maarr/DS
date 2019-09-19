@@ -1,0 +1,13 @@
+package encuesta;
+
+public class Actualizar {
+	
+	private Encuesta encuesta;
+	
+	public void actualizar() {
+		
+	}
+	
+	
+
+}

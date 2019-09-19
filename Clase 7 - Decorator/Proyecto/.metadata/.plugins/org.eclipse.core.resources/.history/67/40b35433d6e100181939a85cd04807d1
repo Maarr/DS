@@ -1,0 +1,30 @@
+package modificadores;
+
+import java.io.IOException;
+
+import fileSystem.Output;
+
+public class ContabilidadCaracteresOutput implements Output{
+	
+	private Output output;
+	private int num=0;
+	
+	public ContabilidadCaracteresOutput(Output output) {
+		this.output=output;
+	}
+
+	@Override
+	public void send(char c) throws IOException {
+		num++;
+		output.send(c);
+		
+	}
+
+	@Override
+	public void close() throws IOException {
+		System.out.println("Número de caracteres enviados: "+num);
+		output.close();
+		
+	}
+
+}

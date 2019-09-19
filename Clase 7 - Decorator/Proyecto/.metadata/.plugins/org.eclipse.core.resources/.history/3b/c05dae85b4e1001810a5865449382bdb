@@ -1,0 +1,35 @@
+package modificaciones;
+
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+
+import fileSystem.FileSystem;
+import fileSystem.Output;
+
+public class QuitarEspacios {
+	
+	private FileSystem fs;
+	
+	public QuitarEspacios(FileSystem fs) {
+		this.fs=fs;
+	}
+
+	public void copy() {
+		try {
+			FileWriter writer=new FileWriter(fs.getName());
+			FileReader reader=new FileReader(fs.getName());
+			int c;
+			while ((c = reader.read()) != -1) 
+				if(Character.isDigit(c) || Character.isLetter(c))
+					writer.write(c+1);
+
+			reader.close();
+			writer.close();
+
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+
+}

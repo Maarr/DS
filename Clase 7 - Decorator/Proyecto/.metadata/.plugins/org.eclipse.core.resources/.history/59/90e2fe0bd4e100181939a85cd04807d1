@@ -1,0 +1,11 @@
+package modificadores;
+
+
+public class NormalizarSaltosLinea{
+
+	public void execute(String text) {
+		text.replace('\r', );
+
+	}	
+
+}

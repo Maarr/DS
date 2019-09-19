@@ -1,0 +1,10 @@
+package paq;
+
+public class InstOutput extends Instruccion {
+	
+	public void ejecutar() {
+		System.out.println(pila.pop());
+		ip++;
+	}
+
+}

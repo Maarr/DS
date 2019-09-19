@@ -1,0 +1,12 @@
+package herramientas;
+
+import cambios.Cambio;
+import editor.Dibujo;
+import editor.Figura;
+
+public interface Herramienta {
+	public void pinchar(int x, int y);
+	public void mover(int x, int y);
+	public void soltar(int x, int y);
+	void crearCambio(Figura fig, Dibujo dibujo);
+}

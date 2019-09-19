@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="fileSystem.FileSystem"/>
+<fullyQualifiedTypeName name="java.io.FileWriter"/>
+<fullyQualifiedTypeName name="modificadores.Modificador"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="fileSystem.Output"/>
+<fullyQualifiedTypeName name="modificadores.NormalizacionSaltosLineaOutput"/>
+<fullyQualifiedTypeName name="modificadores.EncriptacionOutput"/>
+<fullyQualifiedTypeName name="modificadores.EliminacionEspaciosOutput"/>
+<fullyQualifiedTypeName name="modificadores.ContarCaracteresOutput"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+</qualifiedTypeNameHistroy>

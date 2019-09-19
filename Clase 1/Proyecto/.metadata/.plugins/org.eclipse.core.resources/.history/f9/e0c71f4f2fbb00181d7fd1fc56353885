@@ -1,0 +1,43 @@
+package parte2;
+public class Movie	// Película
+{
+	private String title;
+	private int category;
+	
+	public static final int CHILDRENS = 2;
+	public static final int NEW_RELEASE = 1;
+	public static final int REGULAR = 0;
+
+	public Movie(String title, int category) 
+	{
+		this.title = title;
+		this.category = category;
+	}
+	
+	public int getCategory() 
+	{
+		return category;
+	}
+
+	public void setCategory(int category) 
+	{
+		this.category = category;
+	}
+	
+	public String getTitle() 
+	{
+		return title;
+	}
+
+	double getPrice(Rental rental) {
+		return Categories.getPrice(rental);
+	}
+
+	int getPoints(Rental rental) {
+		// 2) Cada alquiler da 1 punto. Punto extra para novedades alquiladas 2 o más días
+		int points = 1;
+		if ((rental.getMovie().getCategory() == Movie.NEW_RELEASE) && rental.getDays() > 1)
+			points = 2;
+		return points;
+	}	
+}

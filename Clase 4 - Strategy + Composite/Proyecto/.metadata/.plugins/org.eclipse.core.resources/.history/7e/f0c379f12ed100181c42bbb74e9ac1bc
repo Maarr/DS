@@ -1,0 +1,17 @@
+package datos;
+
+import campos.Campo;
+
+public class Ciudad extends DatoFormulario {
+	
+	public Ciudad() {
+		super(new Campo("Ciudad"));
+	}
+
+	@Override
+	public boolean validar() {
+		String[] valores= {"Santander", "Oviedo", "Cádiz"};
+		return super.getValidador().validarCumpleValores(super.getDato(), valores);
+	}
+
+}

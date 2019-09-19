@@ -1,0 +1,9 @@
+package CH.ifa.draw.samples.nada;
+
+public class RomboTool {
+
+	public RomboTool() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

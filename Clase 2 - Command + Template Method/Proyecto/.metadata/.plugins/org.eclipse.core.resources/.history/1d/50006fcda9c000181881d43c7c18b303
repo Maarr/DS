@@ -1,0 +1,9 @@
+package paq;
+
+public class InstAdd extends Instruccion {
+	
+	public void ejecutar() {
+		
+	}
+
+}

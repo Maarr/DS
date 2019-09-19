@@ -1,0 +1,10 @@
+package modificadores;
+
+public class EliminacionEspaciosOutput{
+
+	public void execute(char c) {
+		//
+
+	}
+
+}

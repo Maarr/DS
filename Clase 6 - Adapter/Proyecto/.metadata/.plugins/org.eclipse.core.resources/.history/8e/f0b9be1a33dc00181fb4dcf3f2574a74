@@ -1,0 +1,30 @@
+package marcadores;
+
+import google.maps.Coordenadas;
+import google.maps.Marcador;
+import google.maps.Navegador;
+import model.Restaurante;
+
+public class MarcadorRestaurante implements Marcador{
+	
+	private Restaurante restaurante;
+
+	@Override
+	public Coordenadas getCoordenadas() {
+		Navegador nav=new Navegador();
+		return nav.getCoordenadas(dirección);
+	}
+
+	@Override
+	public String getTooltipInfo() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void abrir() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

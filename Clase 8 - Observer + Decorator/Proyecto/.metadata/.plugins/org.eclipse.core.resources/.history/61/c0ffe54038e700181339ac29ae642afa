@@ -1,0 +1,11 @@
+package condiciones;
+
+public class CadaX {
+	
+	
+	
+	public CadaX(int x) {
+		
+	}
+
+}

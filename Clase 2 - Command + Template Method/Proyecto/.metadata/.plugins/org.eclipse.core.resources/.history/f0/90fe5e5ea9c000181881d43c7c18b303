@@ -1,0 +1,10 @@
+package paq;
+
+public class InstPush extends Instruccion {
+	
+	public void ejecutar()
+	{
+		pila.push(Integer.parseInt(instruccion[1]));
+		ip++;
+	}
+}

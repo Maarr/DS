@@ -1,0 +1,9 @@
+package elementos;
+
+public class GraficoCircular {
+	
+	private void actualizaGráficoCircular() {
+		System.out.println("Aquí se dibujaría el gráfico circular.");
+	}
+
+}

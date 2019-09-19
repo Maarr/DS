@@ -1,0 +1,14 @@
+package adapters;
+
+import java.awt.Point;
+
+import platform.Image2D;
+
+public abstract class Platform {
+	
+	public abstract Image2D loadImage(String file);
+	public abstract void drawBall(Image2D image, Point point);
+	public abstract Point getPosition();
+	
+
+}

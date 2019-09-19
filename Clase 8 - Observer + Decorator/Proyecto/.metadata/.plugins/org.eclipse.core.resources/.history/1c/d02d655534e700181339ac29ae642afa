@@ -1,0 +1,45 @@
+package encuesta;
+
+public class Encuesta {
+	
+	private Actualizador actualizador;
+	private Pregunta pregunta;
+	private int si;
+	private int no;
+	
+	public Encuesta(Pregunta pregunta) {
+		this.pregunta=pregunta;
+	}
+	
+	public Pregunta getPregunta() {
+		return pregunta;
+	}
+
+	public int getVotosSi() {
+		return si;
+	}
+
+	public int getVotosNo() {
+		return no;
+	}
+
+	public void incrementaSi() {
+		si++;
+		actualizar();
+	}
+
+	public void incrementaNo() {
+		no++;
+		actualizar();
+	}
+	
+	public void actualizar() {
+		//loqsea
+		hacerBackup();
+	}
+
+	private void hacerBackup() {
+		System.out.println("Aquí se guardarían los datos en disco/BD.");
+	}
+
+}

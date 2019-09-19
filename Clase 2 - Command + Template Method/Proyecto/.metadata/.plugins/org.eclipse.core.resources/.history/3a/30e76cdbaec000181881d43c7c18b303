@@ -1,0 +1,11 @@
+package paq;
+
+public class InstInput extends Instruccion {
+	
+	public void ejecutar() {
+		System.out.println("Escriba un entero:");
+		pila.push(console.nextInt());
+		ip++;
+	}
+
+}

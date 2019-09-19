@@ -1,0 +1,43 @@
+package modificaciones;
+
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+
+import fileSystem.FileSystem;
+import fileSystem.Output;
+
+public class NormalizarSaltosLinea {
+
+	private String name;
+	private Output output;
+	
+	public NormalizarSaltosLinea(String name,Output output) {
+		this.output=output;
+		this.name=name;
+	}
+
+	public void normalizarSaltos() {
+		try {
+			FileWriter writer=new FileWriter(name);
+			FileReader reader=new FileReader(name);
+			int c;
+			while ((c = reader.read()) != -1) 
+				if(c!='\r')
+					writer.write(c);
+
+			reader.close();
+			writer.close();
+
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	
+	public void copy() {
+		new FileSystem().copy(name, output);
+	}
+	
+
+}

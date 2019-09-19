@@ -1,0 +1,17 @@
+package datos;
+
+import campos.Campo;
+
+public class Ciudad extends DatoFormulario {
+	
+	public Ciudad() {
+		super(new Campo("Ciudad"));
+	}
+
+	@Override
+	public boolean validar() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

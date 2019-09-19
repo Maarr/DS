@@ -1,0 +1,18 @@
+package elementos;
+
+import encuesta.Encuesta;
+
+public class LineaEstado {
+	
+	private Encuesta encuesta;
+	
+	public LineaEstado(Encuesta encuesta) {
+		this.encuesta=encuesta;
+	}
+	
+	
+	public void actualizar() {
+		System.out.println("nº votos SI= "+encuesta.getVotosSi()+" nº votos NO= "+encuesta.getVotosNo());
+	}
+
+}

@@ -1,0 +1,18 @@
+package paq;
+
+public class Pila {
+	
+	private static int[] pila = new int[32];
+	private static int sp = 0;
+	
+	private static void push(int valor) {
+		pila[sp] = valor;
+		sp++;
+	}
+
+	private static int pop() {
+		sp--;
+		return pila[sp];
+	}
+
+}

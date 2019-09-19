@@ -1,0 +1,14 @@
+package game;
+
+import BallGame.AndroidBallGame;
+import BallGame.Playstation5BallGame;
+import BallGame.WindowsBallGame;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		BallGame game = new AndroidBallGame();
+		
+		game.play();
+	}
+}

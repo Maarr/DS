@@ -1,0 +1,10 @@
+package elementos;
+
+public class GraficoBarras {
+	
+
+	public void actualizar() {
+		System.out.println("Aquí se dibujaría el gráfico de barras.");
+	}
+
+}

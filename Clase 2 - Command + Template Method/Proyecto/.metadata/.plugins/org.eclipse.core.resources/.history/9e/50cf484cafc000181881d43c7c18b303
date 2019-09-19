@@ -1,0 +1,13 @@
+package paq;
+
+public class InstSub extends Instruccion {
+	
+	public void ejecutar()
+	{
+		int b = pila.pop();
+		int a = pila.pop();
+		pila.push(a - b);
+		ip++;
+	}
+
+}

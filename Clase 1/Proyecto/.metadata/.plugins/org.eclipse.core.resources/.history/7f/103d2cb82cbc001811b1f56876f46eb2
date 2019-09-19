@@ -1,0 +1,9 @@
+package parte2;
+
+public class NewRelease extends Category {
+	
+	double getPrice(Rental rental) {
+		return rental.getDays() * 3;
+	}
+
+}

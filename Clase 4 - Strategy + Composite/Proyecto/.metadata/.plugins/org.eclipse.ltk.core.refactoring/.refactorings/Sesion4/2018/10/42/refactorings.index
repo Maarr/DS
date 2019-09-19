@@ -1,0 +1,17 @@
+1539682938378	Move compilation units
+1539685216837	Delete element
+1539685228287	Rename type 'CampoTexto'
+1539685673927	Move compilation units
+1539685771351	Rename type 'Dato'
+1539686642246	Delete element
+1539686645585	Delete element
+1539871644423	Move compilation unit
+1539871749294	Rename package 'campos'
+1539871759795	Move compilation unit
+1539872715824	Rename type 'ValidadorNumeros'
+1539872790276	Rename method 'getLetras'
+1539872840331	Rename method 'getNumeros'
+1539872866455	Rename method 'getLongitud'
+1539872881624	Rename method 'getMayorQue'
+1539872892695	Rename method 'getMenorQue'
+1539872904789	Rename method 'getCumplirValores'

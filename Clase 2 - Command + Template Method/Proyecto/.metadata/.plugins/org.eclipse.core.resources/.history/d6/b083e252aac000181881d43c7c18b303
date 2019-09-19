@@ -1,0 +1,7 @@
+package paq;
+
+public class InstJmp extends Instruccion {
+	public void ejecutar() {
+		ip = Integer.parseInt(instruccion[1]);
+	}
+}

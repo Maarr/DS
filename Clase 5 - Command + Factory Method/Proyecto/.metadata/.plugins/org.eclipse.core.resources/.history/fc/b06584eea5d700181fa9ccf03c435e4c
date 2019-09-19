@@ -1,0 +1,38 @@
+package cambios;
+
+import java.awt.Point;
+
+import editor.Dibujo;
+import editor.Figura;
+
+public class CambioMover implements Cambio{
+	
+
+	private Figura figura;
+	private Dibujo dibujo;
+	
+	private int dx;
+	private int dy;
+	
+	public CambioMover(Point antes,Point despues,Figura figura, Dibujo dibujo) {
+		dx=antes.x-despues.x;
+		dy=antes.y-despues.y;
+		this.figura=figura;
+		this.dibujo=dibujo;
+	}
+
+	@Override
+	public void undo() {
+		if(dibujo.Contiene(figura))
+			
+			figura.mover(, );
+	}
+
+	@Override
+	public void redo() {
+		if(dibujo.Contiene(figura))
+			dibujo.SustituirFigura(figuraAntes,figuraDespues );
+		
+	}
+
+}

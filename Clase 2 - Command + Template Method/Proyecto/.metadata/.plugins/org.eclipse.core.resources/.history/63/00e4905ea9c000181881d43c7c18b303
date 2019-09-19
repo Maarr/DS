@@ -1,0 +1,126 @@
+package paq;
+import java.io.*;
+import java.util.*;
+
+public class Main {
+
+	private static List<Instruccion> instrucciones = new ArrayList<Instruccion>();
+	private static int ip = 0;
+
+	private static Memoria memoria=new Memoria();
+	private static Pila pila = new Pila();
+
+
+	private static Scanner console = new Scanner(System.in);
+
+	public static void main(String[] args) throws Exception {
+		BufferedReader fichero = new BufferedReader(new FileReader("programa.txt"));
+
+		String linea;
+		while ((linea = fichero.readLine()) != null)
+			cargaInstrucción(linea);
+		fichero.close();
+
+		ejecutaPrograma();
+	}
+
+	private static void cargaInstrucción(String linea) {
+		if (linea.trim().length() == 0)
+			return;
+
+		String[] palabras = linea.split(" ");
+		instrucciones.add(decodificarInstruccion(palabras));
+	}
+	
+	private static Instruccion decodificarInstruccion(String[] palabras) {
+		if (palabras[0].equals("push")) {
+			pila.push(Integer.parseInt(instruccion[1]));
+			ip++;
+		} else if (instruccion[0].equals("add")) {
+			pila.push(pila.pop() + pila.pop());
+			ip++;
+		} else if (instruccion[0].equals("sub")) {
+			int b = pila.pop();
+			int a = pila.pop();
+			pila.push(a - b);
+			ip++;
+		} else if (instruccion[0].equals("mul")) {
+			pila.push(pila.pop() * pila.pop());
+			ip++;
+		} else if (instruccion[0].equals("jmp")) {
+			ip = Integer.parseInt(instruccion[1]);
+		} else if (instruccion[0].equals("jmpg")) {
+			int b = pila.pop();
+			int a = pila.pop();
+			if (a > b)
+				ip = Integer.parseInt(instruccion[1]);
+			else
+				ip++;
+		} else if (instruccion[0].equals("load")) {
+			int direccion = pila.pop();
+			pila.push(memoria.getValor(direccion));
+			ip++;
+		} else if (instruccion[0].equals("store")) {
+			int valor = pila.pop();
+			int direccion = pila.pop();
+			memoria.setValor(valor, direccion);
+			ip++;
+		} else if (instruccion[0].equals("input")) {
+			System.out.println("Escriba un entero:");
+			pila.push(console.nextInt());
+			ip++;
+		} else if (instruccion[0].equals("output")) {
+			System.out.println(pila.pop());
+			ip++;
+		}
+	}
+
+
+
+	private static void ejecutaPrograma() {
+		while (ip < instrucciones.size()) {
+			String[] instruccion = instrucciones.get(ip);
+
+			if (instruccion[0].equals("push")) {
+				pila.push(Integer.parseInt(instruccion[1]));
+				ip++;
+			} else if (instruccion[0].equals("add")) {
+				pila.push(pila.pop() + pila.pop());
+				ip++;
+			} else if (instruccion[0].equals("sub")) {
+				int b = pila.pop();
+				int a = pila.pop();
+				pila.push(a - b);
+				ip++;
+			} else if (instruccion[0].equals("mul")) {
+				pila.push(pila.pop() * pila.pop());
+				ip++;
+			} else if (instruccion[0].equals("jmp")) {
+				ip = Integer.parseInt(instruccion[1]);
+			} else if (instruccion[0].equals("jmpg")) {
+				int b = pila.pop();
+				int a = pila.pop();
+				if (a > b)
+					ip = Integer.parseInt(instruccion[1]);
+				else
+					ip++;
+			} else if (instruccion[0].equals("load")) {
+				int direccion = pila.pop();
+				pila.push(memoria.getValor(direccion));
+				ip++;
+			} else if (instruccion[0].equals("store")) {
+				int valor = pila.pop();
+				int direccion = pila.pop();
+				memoria.setValor(valor, direccion);
+				ip++;
+			} else if (instruccion[0].equals("input")) {
+				System.out.println("Escriba un entero:");
+				pila.push(console.nextInt());
+				ip++;
+			} else if (instruccion[0].equals("output")) {
+				System.out.println(pila.pop());
+				ip++;
+			}
+		}
+	}
+}

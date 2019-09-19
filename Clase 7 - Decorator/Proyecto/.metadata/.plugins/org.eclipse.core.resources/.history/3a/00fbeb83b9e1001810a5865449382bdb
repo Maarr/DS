@@ -1,0 +1,10 @@
+package modificadores;
+
+public class QuitarEspacios implements Modificador {
+
+	public void execute(char c) {
+		//
+
+	}
+
+}

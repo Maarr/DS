@@ -1,0 +1,72 @@
+package validadores;
+
+public class Validador {
+	
+	private ValidadorLetras letras;
+	private ValidadorNumeros numeros;
+	private ValidadorLongitud longitud;
+	private ValidadorMayorQue mayorQue;
+	private ValidadorMenorQue menorQue;
+	private ValidadorCumplirValores cumplirValores;
+	
+	public Validador() {
+		crearValidadores();
+	}
+	
+
+	private void crearValidadores() {
+		letras=new ValidadorLetras();
+		numeros=new ValidadorNumeros();
+		longitud=new ValidadorLongitud();
+		mayorQue=new ValidadorMayorQue();
+		menorQue=new ValidadorMenorQue();
+		cumplirValores=new ValidadorCumplirValores();
+	}
+	
+	public ValidadorLetras getLetras() {
+		return letras;
+	}
+
+	public ValidadorNumeros getNumeros() {
+		return numeros;
+	}
+
+	public ValidadorLongitud getLongitud() {
+		return longitud;
+	}
+
+	public ValidadorMayorQue getMayorQue() {
+		return mayorQue;
+	}
+
+	public ValidadorMenorQue getMenorQue() {
+		return menorQue;
+	}
+
+	public ValidadorCumplirValores getCumplirValores() {
+		return cumplirValores;
+	}
+	
+	public ValidadorLetras getValidadorLetras() {
+		return letras;
+	}
+	
+	public ValidadorNumeros getValidadorNumeros() {
+		return numeros;
+	}
+	
+	
+	
+	
+	
+	
+	
+
+	
+	
+
+	
+	
+	
+
+}

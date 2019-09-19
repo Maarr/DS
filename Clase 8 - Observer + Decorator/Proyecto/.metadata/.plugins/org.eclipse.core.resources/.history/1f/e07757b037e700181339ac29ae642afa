@@ -1,0 +1,9 @@
+package encuesta;
+
+public abstract class ElementoGrafico {
+	
+	public void actualizar();
+	
+	
+
+}

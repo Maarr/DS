@@ -1,0 +1,51 @@
+package encuesta;
+
+public class Encuesta {
+	
+	private Pregunta pregunta;
+	private int si;
+	private int no;
+	
+	public Encuesta(Pregunta pregunta) {
+		this.pregunta=pregunta;
+	}
+	
+	public Pregunta getPregunta() {
+		return pregunta;
+	}
+
+	public int getVotosSi() {
+		return si;
+	}
+
+	public int getVotosNo() {
+		return no;
+	}
+
+	public void incrementaSi() {
+		si++;
+		actualizaGráficoCircular();
+		actualizaGráficoBarras();
+		hacerBackup();
+	}
+
+	public void incrementaNo() {
+		no++;
+		actualizaGráficoCircular();
+		actualizaGráficoBarras();
+		hacerBackup();
+	}
+
+
+	// Parte de representar los datos
+
+
+	private void actualizaGráficoBarras() {
+		System.out.println("Aquí se dibujaría el gráfico de barras.");
+	}
+
+	private void hacerBackup() {
+		System.out.println("Aquí se guardarían los datos en disco/BD.");
+	}
+
+}

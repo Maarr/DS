@@ -1,0 +1,42 @@
+package modificaciones;
+
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import fileSystem.Output;
+
+public class QuitarEspacios {
+	
+	private String name;
+	private Output output;
+	
+	public QuitarEspacios(String name,Output output) {
+		this.output=output;
+		this.name=name;
+	}
+
+	public void quitarEspaciosRepetidos() {
+		try {
+			FileWriter writer=new FileWriter(name);
+			FileReader reader=new FileReader(name);
+			int c;
+			while ((c = reader.read()) != -1) 
+				if(Character.isDigit(c) || Character.isLetter(c))
+					writer.write(c+1);
+
+			reader.close();
+			writer.close();
+
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public void copy() {
+		Encriptar enc=new Encriptar(name,output);
+		enc.encriptar();
+		enc.copy();
+		
+	}
+
+}

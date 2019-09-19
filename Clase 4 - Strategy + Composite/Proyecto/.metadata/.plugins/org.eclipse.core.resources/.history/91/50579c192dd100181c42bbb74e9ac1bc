@@ -1,0 +1,17 @@
+package datos;
+
+import campos.CampoTexto;
+
+public class CodigoPostal extends Dato {
+	
+	public CodigoPostal() {
+		super(new CampoTexto("Código Postal"));
+	}
+
+	@Override
+	public boolean validar() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

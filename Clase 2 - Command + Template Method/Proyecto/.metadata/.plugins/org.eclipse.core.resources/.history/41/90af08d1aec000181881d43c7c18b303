@@ -1,0 +1,12 @@
+package paq;
+
+public class InstStore extends Instruccion{
+	
+	public void ejecutar() {
+		int valor = pila.pop();
+		int direccion = pila.pop();
+		memoria.setValor(valor, direccion);
+		ip++;
+	}
+
+}

@@ -1,0 +1,25 @@
+package nodos;
+
+import visitor.Visitor;
+
+public class Variable implements Expresion {
+	public String name;
+	public Object valor;
+
+	public Variable(String name) {
+		this.name = name;
+	}
+	
+	public void setValor(Object valor) {
+		this.valor=valor;
+	}
+	
+	public Objetc getValor() {
+		return valor;
+	}
+	
+	@Override
+	public Object accept(Visitor v, Object param) {
+		return v.visit(this,param);
+	}
+}

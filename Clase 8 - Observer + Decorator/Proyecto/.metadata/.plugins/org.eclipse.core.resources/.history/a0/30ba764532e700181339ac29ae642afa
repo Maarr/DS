@@ -1,0 +1,9 @@
+package encuesta;
+
+public class Actualizador {
+	
+	private Encuesta encuesta;
+	
+	
+
+}

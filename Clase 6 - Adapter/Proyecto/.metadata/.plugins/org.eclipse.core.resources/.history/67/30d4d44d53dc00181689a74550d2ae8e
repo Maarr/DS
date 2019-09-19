@@ -1,0 +1,45 @@
+package editores;
+
+import java.util.HashMap;
+
+import model.Monumento;
+
+public class EditorMonumento extends Editor {
+	
+	private Monumento monumento;
+	
+	public EditorMonumento(Monumento monumento) {
+		this.monumento=monumento;
+	}
+
+	@Override
+	public void editarValores(String x, String y) {
+		System.out.println("Editando Monumento.");
+
+		System.out.print("- Autor: ");
+		String texto = getLínea();
+		if (texto.length() > 0)
+			monumento.setAutor(texto);
+
+		System.out.print("- Dirección: ");
+		texto = getLínea();
+		if (texto.length() > 0)
+			monumento.setDirección(texto);
+	}
+
+	@Override
+	protected void imprimir() {
+		System.out.println("- Autor = " + monumento.getAutor());
+		System.out.println("- Dirección = " + monumento.getDirección());
+		
+	}
+
+	@Override
+	protected HashMap<String, String> getValoresEditables() {
+		HashMap<String,String> valores=new HashMap<String,String>();
+		valores.put("Autor", "");
+		valores.put("Dirección", "");
+		return valores;
+	}
+
+}

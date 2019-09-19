@@ -1,0 +1,17 @@
+package game;
+
+import adapters.Platform;
+
+public abstract class Launcher {
+	
+	private BallGame game;
+	private Platform platform;
+	
+	public Launcher(Platform platform) {
+		this.platform=platform;
+	}
+	
+	public 
+	
+
+}

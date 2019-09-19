@@ -1,0 +1,43 @@
+package editores;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.HashMap;
+import java.util.Hashtable;
+import java.util.Map;
+
+public abstract class Editor {
+	
+	BufferedReader consola = new BufferedReader(new InputStreamReader(System.in));
+	
+	protected String getLínea() {
+		do {
+			try {
+				return consola.readLine();
+			} catch (IOException ex) {
+				System.out.println("Error de lectura. Inténtelo de nuevo.");
+			}
+		} while (true);
+	}
+	
+	public void editar() {
+		//...........
+		System.out.println("Valores actuales:");
+		imprimir();
+		System.out.println("Escriba nuevos valores (dejar en blanco para dejar el valor actual):");
+		//..........
+		Map<String,String> valores=getValoresEditables();
+		for(String v:valores.) {
+			
+		}
+		//........
+		System.out.println("Valores finales:");
+		imprimir();
+	}
+	
+	protected abstract void imprimir();
+	protected abstract Hashtable<String,String> getValoresEditables();
+	protected abstract void editarValores(String x, String y);
+
+}

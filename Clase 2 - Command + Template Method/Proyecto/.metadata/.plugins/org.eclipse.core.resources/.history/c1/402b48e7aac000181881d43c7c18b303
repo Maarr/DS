@@ -1,0 +1,9 @@
+package paq;
+
+public class InstStore extends Instruccion{
+	
+	public void ejecutar() {
+		
+	}
+
+}

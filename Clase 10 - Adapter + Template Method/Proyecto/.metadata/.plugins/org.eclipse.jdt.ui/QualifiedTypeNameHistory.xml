@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="platform.android.AndroidAPI"/>
+<fullyQualifiedTypeName name="platform.playstation.Playstation5API"/>
+<fullyQualifiedTypeName name="platform.windows.WindowsAPI"/>
+<fullyQualifiedTypeName name="adapters.Windows"/>
+<fullyQualifiedTypeName name="adapters.Android"/>
+<fullyQualifiedTypeName name="adapters.Playstation5"/>
+<fullyQualifiedTypeName name="adapters.Platform"/>
+<fullyQualifiedTypeName name="platform.Image2D"/>
+<fullyQualifiedTypeName name="java.awt.Point"/>
+<fullyQualifiedTypeName name="game.Game"/>
+<fullyQualifiedTypeName name="game.BallGame"/>
+</qualifiedTypeNameHistroy>

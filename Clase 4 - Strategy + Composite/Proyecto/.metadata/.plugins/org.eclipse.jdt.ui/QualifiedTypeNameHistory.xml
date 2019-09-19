@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="campos.Campo"/>
+<fullyQualifiedTypeName name="campos.CampoTexto"/>
+<fullyQualifiedTypeName name="datos.Dato"/>
+<fullyQualifiedTypeName name="formulario.Validador"/>
+<fullyQualifiedTypeName name="datos.Nombre"/>
+<fullyQualifiedTypeName name="datos.Telefono"/>
+<fullyQualifiedTypeName name="datos.Apellido"/>
+<fullyQualifiedTypeName name="datos.Ciudad"/>
+<fullyQualifiedTypeName name="validadores.Validador"/>
+</qualifiedTypeNameHistroy>

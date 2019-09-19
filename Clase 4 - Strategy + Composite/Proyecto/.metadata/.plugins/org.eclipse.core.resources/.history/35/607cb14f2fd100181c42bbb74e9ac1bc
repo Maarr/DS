@@ -1,0 +1,17 @@
+package datos;
+
+import campos.Campo;
+
+public class Edad extends DatoFormulario{
+	
+	public Edad() {
+		super(new Campo("Edad"));
+	}
+
+	@Override
+	public boolean validar() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

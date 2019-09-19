@@ -1,0 +1,19 @@
+package elementos;
+
+import encuesta.ElementoGrafico;
+import encuesta.Encuesta;
+
+public class LineaEstado implements ElementoGrafico{
+	
+	
+	
+	public LineaEstado() {
+
+	}
+	
+	
+	public void actualizar() {
+		System.out.println("nº votos SI= "+encuesta.getVotosSi()+" nº votos NO= "+encuesta.getVotosNo());
+	}
+
+}

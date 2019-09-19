@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="figuras.Cuadrado"/>
+<fullyQualifiedTypeName name="figuras.Triangulo"/>
+<fullyQualifiedTypeName name="herramientas.Herramienta"/>
+<fullyQualifiedTypeName name="herramientas.HerrSeleccion"/>
+<fullyQualifiedTypeName name="herramientas.HerrCuadrado"/>
+<fullyQualifiedTypeName name="figuras.Circulo"/>
+<fullyQualifiedTypeName name="java.awt.Point"/>
+<fullyQualifiedTypeName name="herramientas.HerramientaCrear"/>
+<fullyQualifiedTypeName name="editor.Dibujo"/>
+<fullyQualifiedTypeName name="figuras.Figura"/>
+</qualifiedTypeNameHistroy>

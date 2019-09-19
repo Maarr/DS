@@ -1,0 +1,11 @@
+package paq;
+
+public class InstLoad extends Instruccion {
+	
+	public void ejecutar() {
+		int direccion = pila.pop();
+		pila.push(memoria.getValor(direccion));
+		ip++;
+	}
+
+}

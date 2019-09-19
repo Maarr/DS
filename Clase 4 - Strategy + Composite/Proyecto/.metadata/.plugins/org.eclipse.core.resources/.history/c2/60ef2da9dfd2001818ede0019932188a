@@ -1,0 +1,49 @@
+package validadores;
+
+public class Validador {
+	
+	
+	
+	
+	public boolean validarSoloDigitos(String cadena) {
+		boolean valido=true;
+		for (char ch : cadena.toCharArray()) {
+			if (!Character.isDigit(ch)) {
+				valido = false;
+				break;
+			}
+		}
+		return valido;
+	}
+	
+	public boolean validarMayorQue(String cadena, int tope) {
+		if(Integer.parseInt(cadena)>tope)
+			return true;
+		else
+			return false;
+	}
+	
+
+	public boolean validarMenorQue(String cadena, int tope) {
+		if(Integer.parseInt(cadena)<tope)
+			return true;
+		else
+			return false;
+	}
+	
+
+	public boolean validarCumpleValores(String cadena, String[] valores) {
+		boolean valido=false;
+		for (String valor : valores) {
+			if (cadena.toLowerCase().equals(valor.toLowerCase())) {
+				valido = true;
+				break;
+			}
+		}
+		
+		return valido;
+	}
+	
+	
+
+}

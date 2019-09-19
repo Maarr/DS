@@ -1,0 +1,5 @@
+package editores;
+
+public interface Editor {
+
+}

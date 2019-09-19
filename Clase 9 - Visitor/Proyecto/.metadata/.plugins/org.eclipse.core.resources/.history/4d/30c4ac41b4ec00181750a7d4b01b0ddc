@@ -1,0 +1,81 @@
+package visitor;
+
+import nodos.Asignacion;
+import nodos.ConstanteInt;
+import nodos.Division;
+import nodos.Print;
+import nodos.Producto;
+import nodos.Programa;
+import nodos.Read;
+import nodos.Sentencia;
+import nodos.Suma;
+import nodos.Variable;
+
+public class PrintVisitor implements Visitor{
+
+	@Override
+	public Object visit(Programa program, Object param) {
+		for (Sentencia sent : program.sentencias)
+			sent.accept(this, null);
+			return null;
+	}
+
+	@Override
+	public Object visit(Print print, Object param) {
+		System.out.print("print ");
+		print.expr.accept(this, null);
+		System.out.println(";");
+		return null;
+	}
+
+	@Override
+	public Object visit(Read read, Object param) {
+		System.out.print("read ");
+		read.var.accept(this, null);
+		System.out.println(";");
+		return null;
+	}
+
+	@Override
+	public Object visit(Suma suma, Object param) {
+		suma.left.accept(this, null);
+		System.out.print(" + ");
+		suma.right.accept(this, null);
+		return null;
+	}
+
+	@Override
+	public Object visit(Producto product, Object param) {
+		product.left.accept(this, null);
+		System.out.print(" * ");
+		product.right.accept(this, null);
+		return null;
+	}
+
+	@Override
+	public Object visit(Division div, Object param) {
+		div.left.accept(this, null);
+		System.out.print(" * ");
+		div.right.accept(this, null);
+		return null;
+	}
+
+	@Override
+	public Object visit(Asignacion asig, Object param) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Object visit(Variable var, Object param) {
+		System.out.print(var.name);
+		return null;
+	}
+
+	@Override
+	public Object visit(ConstanteInt constInt, Object param) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+		// Hacerla
+}

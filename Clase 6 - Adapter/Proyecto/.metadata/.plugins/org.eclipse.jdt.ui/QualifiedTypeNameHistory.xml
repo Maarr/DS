@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="google.maps.Navegador"/>
+<fullyQualifiedTypeName name="google.maps.Marcador"/>
+<fullyQualifiedTypeName name="marcadores.MarcadorMonumento"/>
+<fullyQualifiedTypeName name="marcadores.MarcadorFoto"/>
+<fullyQualifiedTypeName name="marcadores.MarcadorRestaurante"/>
+<fullyQualifiedTypeName name="model.Monumento"/>
+<fullyQualifiedTypeName name="editores.EditorMonumento"/>
+<fullyQualifiedTypeName name="model.Foto"/>
+<fullyQualifiedTypeName name="editores.EditorFoto"/>
+<fullyQualifiedTypeName name="model.Restaurante"/>
+<fullyQualifiedTypeName name="editores.EditorRestaurante"/>
+<fullyQualifiedTypeName name="editores.Editor"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="java.util.Hashtable"/>
+</qualifiedTypeNameHistroy>
